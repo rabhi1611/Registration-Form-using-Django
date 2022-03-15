@@ -18,10 +18,9 @@ from django.urls import path
 from registration_form import views
 
 urlpatterns = [
-    path('', views.PersonCreateView.as_view(), name='home'),
-    
+    path('', views.home, name='home'),
+    path('success/', views.succ, name='success'),     
     path('admin/', admin.site.urls)
 ]
 
 
- #path('success/', views.succ, name='success'), 

@@ -140,3 +140,6 @@ REDIRECT_URL='home'
 
 
 STATIC_URL = '/static/'  
+
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
