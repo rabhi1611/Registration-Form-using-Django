@@ -39,7 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'registration_form',
+    'django_filters',
     'crispy_forms',
+    'rest_framework',
+    
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 import os
@@ -146,3 +149,4 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 import django_heroku
 django_heroku.settings(locals(), staticfiles=False)
+

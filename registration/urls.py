@@ -17,9 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from registration_form import views
 
+from registration_form import api_views
+
 urlpatterns = [
     path('', views.home, name='home'),
-    path('success/', views.succ, name='success'),     
+    path('success/', views.succ, name='success'),
+    path('api/v1/list', api_views.ProductList.as_view(), name = 'listApi'),     
     path('admin/', admin.site.urls)
 ]
 
